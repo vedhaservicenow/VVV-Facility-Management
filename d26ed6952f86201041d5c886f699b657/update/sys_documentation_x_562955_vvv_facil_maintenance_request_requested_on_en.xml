@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="requested_on" label="Requested on" language="en" table="x_562955_vvv_facil_maintenance_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>requested_on</element>
+            <help/>
+            <hint/>
+            <label>Requested on</label>
+            <language>en</language>
+            <name>x_562955_vvv_facil_maintenance_request</name>
+            <plural>Requested ons</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-01-30 23:30:10</sys_created_on>
+            <sys_id>4090fa152fc6201041d5c886f699b656</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Requested on</sys_name>
+            <sys_package display_value="VVV Facility Management " source="x_562955_vvv_facil">d26ed6952f86201041d5c886f699b657</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="VVV Facility Management ">d26ed6952f86201041d5c886f699b657</sys_scope>
+            <sys_update_name>sys_documentation_x_562955_vvv_facil_maintenance_request_requested_on_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-01-30 23:30:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

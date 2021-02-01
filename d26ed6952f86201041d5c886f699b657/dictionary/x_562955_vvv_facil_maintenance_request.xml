@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Maintenance request" max_length="40" name="x_562955_vvv_facil_maintenance_request" sizeclass="0" type="collection">
+        <element choice="1" label="Permission to enter" max_length="30" name="permission_to_enter" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element choice="1" display="true" label="Preferred time" mandatory="true" max_length="40" name="preferred_time" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="10am-12pm" sequence="0" value="10am-12pm"/>
+                <element inactive_on_update="false" label="2pm-5pm" sequence="1" value="2pm-5pm"/>
+            </choice>
+        </element>
+        <element choice="1" label="Priority" mandatory="true" max_length="30" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+                <element inactive_on_update="false" label="Low" sequence="2" value="low"/>
+            </choice>
+        </element>
+        <element choice="1" label="Problem category" mandatory="true" max_length="50" name="problem_category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Water leakage" sequence="0" value="water leakage"/>
+                <element inactive_on_update="false" label="Electrical issue" sequence="1" value="electrical issue"/>
+                <element inactive_on_update="false" label="Water clogging" sequence="2" value="water clogging"/>
+                <element inactive_on_update="false" label="Property damage" sequence="3" value="property damage"/>
+                <element inactive_on_update="false" label="Others" sequence="4" value="others"/>
+            </choice>
+        </element>
+        <element label="Problem description" mandatory="true" max_length="500" name="problem_description" type="string"/>
+        <element label="Problem start date" mandatory="true" max_length="10" name="problem_start_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested by" max_length="40" name="requested_by" type="string"/>
+        <element label="Requested on" mandatory="true" max_length="30" name="requested_on" type="glide_date"/>
+        <element label="Unit number" mandatory="true" max_length="40" name="unit_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Problem category" mandatory="true" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Water leakage" sequence="0" value="water leakage"/>
+                <element inactive_on_update="false" label="Electrical issue" sequence="1" value="electrical issue"/>
+                <element inactive_on_update="false" label="water clogging" sequence="2" value="water clogging"/>
+                <element inactive_on_update="false" label="Property damage" sequence="3" value="property damage"/>
+                <element inactive_on_update="false" label="Others" sequence="4" value="others"/>
+            </choice>
+        </element>
+        <element dependent="problem_category" dependent_on_field="problem_category" label="Sub category" mandatory="true" max_length="80" name="u_field_name_1" type="field_name" use_dependent_field="true"/>
+    </element>
+</database>
